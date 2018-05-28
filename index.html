@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta content="Joshua Booth's personal website, providing a list of his work, skills and contact details." name="description" />
+    <meta content="Joshua Booth, Back-end, Developer, Python, Django, Web" name="keywords" />
+    <meta content="Joshua Booth" name="author" />
+    <meta content="#FFFFFF" name="theme-color" />
+    <title>Joshua Booth</title>
+	<link href="./static/images/josh_icon.ico" type="image/x-icon" rel="shortcut icon"/>
+	<link href="./static/images/josh_icon.ico" type="image/x-icon" rel="icon"/>
+    <link href="./static/dist/semantic-ui/semantic.min.css" type="text/css" rel="stylesheet"/>
+    <link href="./static/stylesheets/default.css" type="text/css" rel="stylesheet"/>
+	<script src="./static/dist/jQuery/jquery.min.js"></script>
+	<script src="./static/dist/semantic-ui/semantic.min.js"></script>
+	<script src="./static/dist/JavaScript/scripts.js"></script>
+  </head>
+  <body id="home">
+    <div class="ui large top fixed hidden menu">
+      <div class="ui container">
+        <a id="homeLink" class="active item" href="#home">Home</a>
+		<a id="aboutLink" class="item" href="#about">About</a>
+		<a id="portfolioLink" class="item" href="#portfolio">Portfolio</a>
+		<a id="contactLink" class="item" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!--Sidebar Menu-->
+    <div class="ui vertical inverted sidebar menu">
+		<a id="homeLink" class="active item" href="#home">Home</a>
+		<a id="aboutLink" class="item" href="#about">About</a>
+		<a id="portfolioLink" class="item" href="#portfolio">Portfolio</a>
+		<a id="contactLink" class="item" href="#contact">Contact</a>
+    </div>
+
+    <!--Page Contents-->
+    <div class="pusher">
+		<div class="ui inverted vertical masthead center aligned segment">
+			<div class="ui container">
+				<div class="ui large secondary inverted pointing menu">
+					<a class="toc item"><i class="sidebar icon"></i></a>
+					<a id="homeLink" class="active item" href="#home" onclick="switchHeader('#homeLink')">Home</a>
+					<a id="aboutLink" class="item" href="#about" onclick="switchHeader('#aboutLink')">About</a>
+					<a id="portfolioLink" class="item" href="#portfolio" onclick="switchHeader('portfolioLink')">Portfolio</a>
+					<a id="contactLink" class="item" href="#contact" onclick="switchHeader('#contactLink')">Contact</a>
+				</div>
+			</div>
+			<div class="ui text container">
+				<h1 class="ui inverted header">Joshua Booth</h1>
+				<h2>Self-taught Back-end developer</h2>
+				<a class="ui huge primary button" href="#about">Learn more<i class="right arrow icon"></i></a>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div id="about" class="ui vertical stripe segment" style="padding-bottom:0px">
+			<div class="ui middle aligned stackable grid container">
+				<div class="row">
+					<div class="eight wide column">
+						<div>
+							<h3 class="ui header">About me</h3>
+							<p>
+							  I'm a 17-year-old student who is currently studying at <a href="http://techtorium.ac.nz/" style="text-decoration-line:underline">Techtorium</a>
+							  for a NZ Diploma in Software Development.
+							  In my spare time I am learning back-end development with Python and Django.
+							</p>
+
+							<!-- Skills -->
+							<h3 class="ui header">My skills</h3>
+							<ul class="ui big list left floated">
+								<li>Python</li>
+								<li>Django</li>
+								<li>HTML/CSS</li>
+								
+							</ul>
+
+							<ul class="ui big list right floated">
+								<li>JavaScript/jQuery</li>
+								<li>C#</li>
+								<li>T-SQL</li>
+								<li style="visibility: hidden">alignmentplacehold</li>
+							</ul>
+						</div>
+					</div>
+						<div id="profile" class="six wide computer seven wide tablet ten wide mobile right floated column">
+							<div id="profile-padding" style="padding-left:50px">
+								<img id="profile-pic" class="ui rounded bordered image" src="./static/images/joshua.jpg"/>
+							</div>
+						</div>
+				</div>
+			</div>
+			<!-- Portfolio -->
+			<div id="portfolio" class="ui very padded segment"></div>
+			<div class="ui vertical stripe segment">
+				<div class="ui middle aligned stackable grid container">
+					<div class="sixteen wide center aligned column">
+						<h3 class="ui header">My portfolio</h3>
+					</div>
+					<div class="ui centered grid">
+						<div class="five wide computer eight wide tablet ten wide mobile column">
+							<div class="ui center aligned segment" id="cmd">
+								<div class="ui menu">
+								  <div class="ui simple dropdown">
+									<h2 class="ui icon header">
+										<img class="ui centered medium image" src="./static/images/terminal.svg" style="padding-bottom:15px"/>
+										<div class="content">
+											Command-line programs and Scripts
+											<div class="sub header">Create, view and edit data from the command-line or file.</div>
+										</div>
+									</h2>
+									<div class="ui segment" style="padding:0px;margin:7px"></div>
+									<div class="menu" style="min-width:0">
+										<div class="ui center aligned ten wide grid">
+										<div class="left aligned sixteen wide column" style="padding-bottom:0px">
+										  <div class="item">
+											<a href="https://github.com/Joshua-Booth/docx-diary">
+												<i class="large github middle aligned icon"></i>
+											</a>
+											<div class="content">
+											  <a href="https://github.com/Joshua-Booth/docx-diary" class="header">
+												Joshua-Booth/docx-diary</a>
+											  <div class="description">A python script for creating, viewing and</div>
+											<div class="description">editing word document diary entries.</div>
+											</div>
+										  </div>
+										</div>
+										<div class="center aligned five wide column" style="padding-bottom:0px"></div>
+										</div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="five wide computer eight wide tablet ten wide mobile column">
+							<div class="ui center aligned segment" id="mobile">
+								<div class="ui menu">
+								  <div class="ui simple dropdown">
+									<h2 class="ui icon header">
+										<img class="ui centered medium image" src="./static/images/app.svg" style="padding-bottom:20px">
+										<div class="content">
+											Mobile and Desktop applications
+											<div class="sub header">Interact with data using a mobile device.</div>
+										</div>
+									</h2>
+									<div class="ui segment" style="padding:0px;margin:7px"></div>
+									<div class="menu" style="min-width:0">
+										<div class="ui center aligned ten wide grid">
+										<div class="left aligned sixteen wide column" style="padding-bottom:0px">
+										  <div class="item">
+											<a href="https://github.com/Joshua-Booth/virtual-world">
+												<i class="large github middle aligned icon"></i>
+											</a>
+											<div class="content">
+											  <a href="https://github.com/Joshua-Booth/virtual-world" class="header">
+												Joshua-Booth/virtual-world</a>
+											  <div class="description">A python tkinter desktop game.</div>
+											</div>
+										  </div>
+										  <div class="item">
+											<a href="https://github.com/Joshua-Booth/umbrella-shop">
+												<i class="large github middle aligned icon"></i>
+											</a>
+											<div class="content">
+											  <a href="https://github.com/Joshua-Booth/umbrella-shop" class="header">
+												Joshua-Booth/umbrella-shop</a>
+											  <div class="description">A python tkinter desktop application.</div>
+											</div>
+										  </div>
+										</div>
+										<div class="center aligned five wide column" style="padding-bottom:0px"></div>
+										</div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+
+						<div class="five wide computer eight wide tablet ten wide mobile column">
+							<div class="ui center aligned segment" id="websites">
+								<div class="ui menu">
+								  <div class="ui simple dropdown">
+									<h2 class="ui icon header">
+										<img class="ui centered medium image" src="./static/images/web.svg" style="padding-bottom:15px">
+										<div class="content">
+											Websites and Web applications
+											<div class="sub header">Interact with data using a user friendly web interface.</div>
+										</div>
+									</h2>
+									<div class="ui segment" style="padding:0px;margin:7px"></div>
+									<div class="menu" style="min-width:0">
+										<div class="ui center aligned ten wide grid">
+											<div class="left aligned sixteen wide column" style="padding-bottom:0px">
+											  <div class="item">
+												<a href="https://github.com/Joshua-Booth/website">
+													<i class="large github middle aligned icon"></i>
+												</a>
+												<div class="content">
+												  <a href="https://github.com/Joshua-Booth/website" class="header">
+													Joshua-Booth/website</a>
+												  <div class="description">My personal website.<span style="visibility:hidden">space filling data</span></div>
+												</div>
+											  </div>
+											</div>
+											<div class="center aligned five wide column" style="padding-bottom:0px"></div>
+										</div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- Contact -->
+		<div class="ui vertical stripe segment">
+			<div class="ui text container">
+				<div id="contact" class="ui hidden divider"></div>
+				<div class="ui hidden divider"></div>
+				<div class="ui hidden divider"></div>
+				<div class="ui hidden divider"></div>
+				<h3 class="ui header">Contact me</h3>
+
+				<!-- Social media buttons -->
+				<div class="ui grid">
+					<div class="four wide computer eight wide tablet sixteen wide mobile column">
+						<div class="ui center aligned segment" id="animate-jello">
+							<a href="https://plus.google.com/u/0/108498755553708617204">
+								<img class="ui centered tiny image" src="./static/images/googleplus.svg"/>
+							</a>
+						</div>
+					</div>
+					<div class="four wide computer eight wide tablet sixteen wide mobile column">
+						<div class="ui center aligned segment" id="animate-bounce">
+							<a href="https://www.linkedin.com/in/joshua-booth/">
+								<img class="ui centered tiny image" src="./static/images/linkedin.svg"/>
+							</a>
+						</div>
+					</div>
+					<div class="four wide computer eight wide tablet sixteen wide mobile column">
+						<div class="ui center aligned segment" id="animate-tada">
+							<a href="skype:live:joshb00th?chat">
+								<img class="ui centered tiny image" src="./static/images/skype.svg"/>
+							</a>
+						</div>
+					</div>
+					<div class="four wide computer eight wide tablet sixteen wide mobile column">
+						<div class="ui center aligned segment" id="animate-rubberBand">
+							<a href="https://github.com/Joshua-Booth">
+								<img class="ui centered tiny image" src="./static/images/github.svg">
+							</a>
+						</div>
+					</div>
+					<div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
+						<div class="ui center aligned segment">
+							<h2>joshb00th@icloud.com</h2>
+						</div>
+					</div>
+				</div>
+				<div class="ui hidden divider"></div>
+				
+				<!-- Contact form -->
+				<form class="validate ui form" action="contact.php" method="post">
+					<div class="fields">
+						<div class="eight wide field">
+							<label for="text">First name</label>
+							<input type="text" name="first_name" id="first_name" placeholder="John" required>
+						</div>
+						<div class="eight wide field">
+							<label for="text">Last name</label>
+							<input type="text" name="last_name" id="last_name" placeholder="Smith" required>
+						</div>
+					</div>
+					<div class="fields">
+						<div class="sixteen wide field">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" placeholder="john.smith@gmail.com" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+						</div>
+					</div>
+					<div class="fields">
+						<div class="sixteen wide field">
+							<label for="url">Message</label>
+							<textarea name="message" id="message" placeholder="Your message" required></textarea>
+						</div>
+					</div>
+					<div class="ui center aligned segment">
+						<input type="submit" class="ui button" value="Submit">
+					</div>
+				</form>
+				<div class="ui hidden success message" id="success-message">
+					<i class="close icon"></i>
+					<div class="center aligned header">Form sent!</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="ui inverted vertical footer segment">
+			<div class="ui container">
+				<div class="ui stackable inverted divided equal height stackable grid"></div>
+				<div class="ui section divider"></div>
+				Copyright © 2018 Joshua Booth
+			</div>
+		</div>
+    </div>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<script src="./static/dist/JavaScript/validate.js"></script>
+    <style type="text/css">
+	  *:focus {
+		outline: none;
+	  }
+
+      .hidden.menu {
+        display: none;
+      }
+      
+      .masthead.segment {
+        min-height: 600px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 2em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+      
+      .ui.vertical.stripe {
+        padding: 8em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+      
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+      
+      .footer.segment {
+        padding: 5em 0em;
+      }
+      
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+          display: none !important;
+        }
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+      }
+    </style>
+    <script>
+      $(document)
+        .ready(function() {
+          // fix menu when passed
+          $('.masthead')
+            .visibility({
+              once: false,
+              onBottomPassed: function() {
+                $('.fixed.menu').transition('fade in');
+              },
+              onBottomPassedReverse: function() {
+                $('.fixed.menu').transition('fade out');
+              }
+            })
+          ;
+      
+          // create sidebar and attach to menu open
+          $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item')
+          ;
+        })
+      ;
+    </script>
+	</body>
+</html>
